@@ -1,13 +1,13 @@
-# EIP-8086: Privacy Token Standard
+# ERC-8086: Privacy Token Standard
 
 > A minimal interface for native privacy-preserving fungible tokens on Ethereum
 
-[![EIP Status](https://img.shields.io/badge/EIP-8086-blue)](https://eips.ethereum.org/EIPS/eip-8086)
+[![ERC Status](https://img.shields.io/badge/ERC-8086-blue)](https://eips.ethereum.org/EIPS/eip-8086)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Overview
 
-EIP-8086 defines **IZRC20**, a minimal interface standard for native privacy tokens on Ethereum. This standard enables:
+ERC-8086 defines **IZRC20**, a minimal interface standard for native privacy tokens on Ethereum. This standard enables:
 
 - **Wrapper Protocols**: Add privacy to existing ERC-20 tokens (DAI → zDAI → DAI)
 - **Dual-Mode Tokens**: Combine public (ERC-20) and private (ZRC-20) modes in one contract
@@ -112,11 +112,11 @@ Total Capacity: 68.7 billion notes
 ## Repository Structure
 
 ```
-eip-8086-reference/
+erc-8086-reference/
 ├── README.md                           # This file
 ├── contracts/
 │   ├── interfaces/
-│   │   ├── IZRC20.sol                  # Core interface (EIP-8086)
+│   │   ├── IZRC20.sol                  # Core interface (ERC-8086)
 │   │   └── IVerifier.sol               # Verifier interfaces
 │   └── reference/
 │       ├── PrivacyToken.sol            # Reference implementation
@@ -124,7 +124,7 @@ eip-8086-reference/
 ├── deployments/
 │   └── base-sepolia.json               # Deployment addresses & config
 ├── docs/
-│   └── erc-8086.md                     # Full EIP specification
+│   └── erc-8086.md                     # Full ERC specification
 └── examples/
     └── interaction.md                  # How to interact with contracts
 ```

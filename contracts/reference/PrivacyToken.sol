@@ -7,7 +7,7 @@ import "../interfaces/IZRC20.sol";
 
 /**
  * @title PrivacyToken
- * @notice Reference implementation of EIP-8086 (IZRC20) with dual-layer Merkle tree architecture
+ * @notice Reference implementation of ERC-8086 (IZRC20) with dual-layer Merkle tree architecture
  * @dev This implementation uses a dual-layer tree structure:
  *      - Active Subtree (16 levels): Stores recent commitments, enables fast proof generation
  *      - Root Tree (20 levels): Archives finalized subtree roots

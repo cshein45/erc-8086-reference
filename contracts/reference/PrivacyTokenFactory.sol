@@ -7,7 +7,7 @@ import "./PrivacyToken.sol";
 
 /**
  * @title PrivacyTokenFactory
- * @notice Factory for deploying new EIP-8086 compliant privacy tokens
+ * @notice Factory for deploying new ERC-8086 compliant privacy tokens
  * @dev Uses minimal proxy pattern (EIP-1167) for gas-efficient deployments.
  *      Anyone can create a new privacy token by paying the creation fee.
  */

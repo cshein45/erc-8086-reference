@@ -1,6 +1,6 @@
-# Interacting with EIP-8086 Privacy Tokens
+# Interacting with ERC-8086 Privacy Tokens
 
-This guide explains how to interact with the deployed EIP-8086 reference implementation on Base Sepolia.
+This guide explains how to interact with the deployed ERC-8086 reference implementation on Base Sepolia.
 
 ## Quick Start
 
@@ -207,6 +207,6 @@ The web application at [testnative.zkprotocol.xyz](https://testnative.zkprotocol
 
 ## Resources
 
-- [EIP-8086 Specification](../docs/eip-8086.md)
+- [ERC-8086 Specification](../docs/erc-8086.md)
 - [Whitepaper](../docs/whitepaper.md)
 - [Discussion Forum](https://ethereum-magicians.org/t/erc-8086-privacy-token/26623)

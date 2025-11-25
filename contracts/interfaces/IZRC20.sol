@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title IZRC20
- * @notice Minimal interface for native privacy assets on Ethereum (EIP-8086)
+ * @notice Minimal interface for native privacy assets on Ethereum (ERC-8086)
  * @dev This standard defines the foundation for privacy-preserving tokens
  *      that can be used directly or as building blocks for wrapper protocols
  *      and dual-mode protocols implementations.
