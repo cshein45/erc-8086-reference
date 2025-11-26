@@ -139,16 +139,23 @@ interface IZRC20 {
     ) external;
 
     // ═══════════════════════════════════════════════════════════════════════
-    // Query Functions (OPTIONAL but RECOMMENDED)
+    // Query Functions
     // ═══════════════════════════════════════════════════════════════════════
 
     /**
      * @notice Check if a nullifier has been spent
      * @param nullifier The nullifier to check
      * @return True if nullifier spent, false otherwise
-     * @dev OPTIONAL but RECOMMENDED for client-side validation before proof generation
-     *      Implementations using `mapping(bytes32 => bool) public nullifiers`
+     * @dev Implementations using `mapping(bytes32 => bool) public nullifiers`
      *      will auto-generate this function.
      */
     function nullifiers(bytes32 nullifier) external view returns (bool);
+
+    /**
+     * @notice Returns the current active subtree Merkle root
+     * @return The root hash of the active subtree
+     * @dev The active subtree stores recent commitments for faster proof computation.
+     *      For dual-tree implementations, this is the root of the current working subtree.
+     */
+    function activeSubtreeRoot() external view returns (bytes32);
 }
